@@ -87,7 +87,7 @@ cd attacklab
 # 比如你发现你可以使用'A'去覆盖8个字节，然后跳转到0x114514地址就可以完成任务，那么你可以这么写你的payload并保存
 padding = b"A" * 16
 func1_address = b"\x14\x45\x11\x00\x00\x00\x00\x00"  # 小端地址
-payload = padding+ func1_addr ess
+payload = padding+ func1_address
 # Write the payload to a file
 with open("ans.txt", "wb") as f:
     f.write(payload)
